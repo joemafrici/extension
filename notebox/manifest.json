@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "notebox",
+	"version": "1.0",
+	"description": "box for notes that replaces newtab",
+	"content_scripts": [
+		{
+			"matches": ["about:newtab"],
+			"js": ["notebox.js"]
+		}
+	],
+	"permissions": [
+	],
+	"chrome_url_overrides": {
+		"newtab": "notebox.html"
+	}
+}
